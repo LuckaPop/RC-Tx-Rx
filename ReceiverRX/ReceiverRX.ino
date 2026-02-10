@@ -22,7 +22,7 @@ Servo motorESC;
 #define pinMot 5
 
 void setup() {
-  Serial.begin(9600);
+  //Serial.begin(9600);
  
   pitchServo.attach(2);
   rollIServo.attach(3); 
@@ -36,7 +36,7 @@ void setup() {
 
   radio.begin();
   radio.openReadingPipe(0,address); 
-  radio.setChannel(100); 
+  radio.setChannel(76); 
   radio.setAutoAck(false); 
   radio.setDataRate(RF24_250KBPS); 
   radio.setPALevel(RF24_PA_HIGH); 
@@ -49,7 +49,7 @@ void setup() {
 }
 
 void loop() {
-  Serial.println("Loop Activo");
+  //Serial.println("Loop Activo");
   delay(500);
   if (radio.available()) {
 

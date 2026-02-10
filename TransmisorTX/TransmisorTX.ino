@@ -18,7 +18,7 @@ const int motSw = 3;
 void setup() {
   radio.begin(); 
   radio.openWritingPipe(address); 
-  radio.setChannel(100); 
+  radio.setChannel(76); 
   radio.setAutoAck(false); 
   radio.setDataRate(RF24_250KBPS); 
   radio.setPALevel(RF24_PA_HIGH); 
